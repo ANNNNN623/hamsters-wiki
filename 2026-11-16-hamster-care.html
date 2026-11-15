@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>倉鼠飼養照護入門指南 · 韓系可愛大地色導讀</title>
+  
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.css">
+  
+  <style>
+    :root {
+      --bg-cream: #FAF7F2;
+      --bg-warm: #F4EFEB;
+      --text-main: #3E3228;
+      --text-muted: #7E6C5C;
+      --text-light: #A39282;
+      --accent-caramel: #C68642;
+      --accent-warm-brown: #8A5328;
+      --accent-sage: #6B7F67;
+      --accent-terracotta: #B5653C;
+      --card-bg: #FFFFFF;
+      --card-border: #EADBCC;
+      --card-shadow: 0 10px 30px rgba(140, 110, 80, 0.07);
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans TC", "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      overflow-x: hidden;
+    }
+
+    .reveal {
+      color: var(--text-main);
+      font-size: 25px;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+      color: var(--text-main);
+      text-transform: none;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .reveal h1 {
+      font-size: 2.1em;
+      line-height: 1.25;
+      margin: 12px 0 16px 0;
+    }
+
+    .reveal h2 {
+      font-size: 1.65em;
+      margin-bottom: 22px;
+      font-weight: 700;
+    }
+
+    /* 韓系柔和膠囊標籤 */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 16px;
+      font-size: 0.52em;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      border-radius: 9999px;
+      background: #F2E8DC;
+      color: var(--accent-warm-brown);
+      border: 1px solid #E0CEBD;
+      margin-bottom: 12px;
+    }
+
+    .badge-sage {
+      background: #EBF0EA;
+      color: var(--accent-sage);
+      border-color: #D3DFD1;
+    }
+
+    .badge-terracotta {
+      background: #F8EBE5;
+      color: var(--accent-terracotta);
+      border-color: #EACDC2;
+    }
+
+    /* 韓系大地色卡片 */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 22px;
+      padding: 22px 24px;
+      box-shadow: var(--card-shadow);
+      text-align: left;
+      position: relative;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 18px;
+    }
+
+    /* 倉鼠助教圖片與對話框樣式 */
+    .hamster-mascot {
+      filter: drop-shadow(0 10px 20px rgba(120, 90, 60, 0.15));
+      border-radius: 18px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .hamster-mascot:hover {
+      transform: scale(1.03);
+    }
+
+    .speech-bubble {
+      background: #FFFFFF;
+      border: 1px solid #EADBCC;
+      border-radius: 16px;
+      padding: 10px 16px;
+      font-size: 0.72em;
+      color: var(--text-main);
+      box-shadow: 0 6px 18px rgba(140, 110, 80, 0.08);
+      position: relative;
+      display: inline-block;
+      line-height: 1.45;
+      margin-top: 10px;
+      max-width: 280px;
+    }
+
+    .speech-bubble::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 24px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #EADBCC;
+    }
+
+    .speech-bubble::after {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 25px;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #FFFFFF;
+    }
+
+    .clean-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .clean-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+      font-size: 0.82em;
+      color: var(--text-main);
+    }
+
+    .clean-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: var(--accent-caramel);
+      font-size: 1.3em;
+      line-height: 1;
+      top: -1px;
+    }
+
+    .highlight-caramel {
+      color: var(--accent-caramel);
+      font-weight: 600;
+    }
+
+    .highlight-sage {
+      color: var(--accent-sage);
+      font-weight: 600;
+    }
+
+    .highlight-terracotta {
+      color: var(--accent-terracotta);
+      font-weight: 600;
+    }
+
+    .footer-bar {
+      position: fixed;
+      bottom: 14px;
+      left: 24px;
+      right: 24px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--text-light);
+      z-index: 100;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: 封面 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 940px; margin: 0 auto;">
+          <div style="flex: 1.3; text-align: left; padding-right: 30px;">
+            <span class="badge">🐹 倉鼠萌寵指南 · 官方標準解讀</span>
+            <h1>倉鼠飼養照護<br>入門指南</h1>
+            <p style="font-size: 0.88em; color: var(--text-muted); margin: 0 0 24px 0; line-height: 1.5;">
+              打造健康、安心且符合動物福祉的鼠鼠小天地
+            </p>
+            <div style="font-size: 0.65em; color: var(--text-muted); background: #FFFFFF; padding: 10px 18px; border-radius: 14px; border: 1px solid var(--card-border); display: inline-flex; gap: 12px;">
+              <span>📜 官方依據：<code>wiki/papers/2023-taipei-rodent-care-guide</code></span>
+              <span>·</span>
+              <span>🏷️ 概念頁：<code>wiki/concepts/hamster-care</code></span>
+            </div>
+          </div>
+          <div style="flex: 0.9; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039362.jpg" alt="揮手倉鼠" class="hamster-mascot" style="max-height: 250px;">
+            <div>
+              <div class="speech-bubble">
+                🐾 哈囉！今天由我擔任你的專屬小導師，一起學會科學養鼠吧！
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          大家好！歡迎來到今天的倉鼠飼養照護入門導讀。今天我們請來最可愛的倉鼠小導師，帶大家從零開始，完整了解如何給這個毛茸茸的小生命一個安全、舒適且符合現代動物福祉的生活環境。讓我們一起開啟這趟溫暖的學習之旅吧！
+        </aside>
+      </section>
+
+      <!-- Slide 2: 認識倉鼠 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge">Hamster Traits</span>
+            <h2>認識倉鼠：物種特徵與生活習性</h2>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="card" style="border-left: 4px solid var(--accent-caramel);">
+                <h4 style="color: var(--accent-caramel); font-size: 0.95em; margin: 0 0 6px 0;">🐹 常見寵物物種與壽命</h4>
+                <ul class="clean-list">
+                  <li>黃金鼠（敘利亞倉鼠）、三線鼠、一線鼠。</li>
+                  <li><strong>平均壽命約 2 至 3 年</strong>，需要飼主細心陪伴牠的一生。</li>
+                </ul>
+              </div>
+              <div class="card" style="border-left: 4px solid var(--accent-sage);">
+                <h4 style="color: var(--accent-sage); font-size: 0.95em; margin: 0 0 6px 0;">🌿 地棲穴居與夜行本能</h4>
+                <ul class="clean-list">
+                  <li>天生熱愛<strong>挖掘泥土、堆築地底隧道</strong>與藏匿糧食。</li>
+                  <li>屬於晨昏與夜行性動物，白天絕大部分時間在熟睡，切勿打擾。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0.7; text-align: center; margin-top: 30px;">
+            <img src="../raw/assets/hamster/S__17039364.jpg" alt="雙手合十倉鼠" class="hamster-mascot" style="max-height: 220px;">
+            <div class="speech-bubble">
+              🐹 白天是我的美容覺時間～天黑了才是我精力充沛的時刻喔！
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          在迎接倉鼠回家前，我們先來認識牠的習性。寵物倉鼠的壽命大約只有 2 到 3 年，但這兩三年就是牠的完整一生。牠們是天生的地棲挖土專家，而且屬於夜行性動物，白天大部分時間在睡覺，請大家白天千萬不要隨意打擾牠們休息喔。
+        </aside>
+      </section>
+
+      <!-- Slide 3: 第一鐵律 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge badge-terracotta">Golden Rule</span>
+            <h2>飼養第一鐵律：單獨飼養，嚴禁合籠！</h2>
+            <div class="card" style="border-left: 4px solid var(--accent-terracotta); margin-bottom: 16px;">
+              <p style="font-size: 0.9em; font-weight: 600; color: var(--accent-terracotta); margin: 0 0 6px 0;">
+                ⚠️ 倉鼠是獨居性動物，具備極強的領地意識與排他本能！
+              </p>
+              <p style="font-size: 0.78em; color: var(--text-muted); margin: 0;">
+                許多人誤以為倉鼠會「寂寞」，強行合籠極易引發慘烈的流血爭鬥甚至致死悲劇。
+              </p>
+            </div>
+            <div class="grid-2">
+              <div class="card">
+                <h4 style="color: var(--accent-warm-brown); font-size: 0.9em; margin: 0 0 6px 0;">📜 官方明確規範</h4>
+                <p style="font-size: 0.75em; color: var(--text-muted); margin: 0;">若群養出現任何攻擊性行為，必須立即分開獨立飼養。</p>
+              </div>
+              <div class="card">
+                <h4 style="color: var(--accent-sage); font-size: 0.9em; margin: 0 0 6px 0;">🛡️ 福祉唯一共識</h4>
+                <p style="font-size: 0.75em; color: var(--text-muted); margin: 0;">堅持<strong>「一鼠一籠」</strong>，給予彼此獨立空間就是最大的愛。</p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0.7; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039363.jpg" alt="瞇眼警戒倉鼠" class="hamster-mascot" style="max-height: 220px;">
+            <div class="speech-bubble">
+              🐹 這是我的專屬地盤！<br>有別人來我會緊張生氣打架的！
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          這是所有養鼠新手最容易犯的致命錯誤——請大家一定要牢記：倉鼠必須單獨飼養，嚴禁合籠！牠們不是寂寞需要朋友的動物，相反地，只要有其他倉鼠入侵領地，牠們就會陷入極度焦慮，甚至引發死傷慘重的打鬥。給牠們最大的愛，就是給牠們獨立的專屬空間。
+        </aside>
+      </section>
+
+      <!-- Slide 4: 空間標準 -->
+      <section data-background-color="#FAF7F2">
+        <div style="text-align: left; max-width: 940px; margin: 0 auto;">
+          <span class="badge">Housing Standards</span>
+          <h2>拒絕小鳥籠！打造合格的活動底面積</h2>
+          <div style="display: flex; gap: 20px; align-items: stretch; margin-bottom: 20px;">
+            <div style="flex: 1;" class="card">
+              <div style="font-size: 1.4em; margin-bottom: 4px;">📐</div>
+              <h4 style="color: var(--accent-caramel); font-size: 0.98em; margin: 0 0 6px 0;">底面積最低門檻</h4>
+              <p style="font-size: 0.78em; color: var(--text-main); margin: 0 0 6px 0;"><strong>至少 $\ge 600\text{ cm}^2$</strong></p>
+              <p style="font-size: 0.72em; color: var(--text-muted); margin: 0;">單隻單籠底面積法定底線，面積越寬敞，壓力刻板行為越少。</p>
+            </div>
+            <div style="flex: 1;" class="card">
+              <div style="font-size: 1.4em; margin-bottom: 4px;">🙆‍♂️</div>
+              <h4 style="color: var(--accent-sage); font-size: 0.98em; margin: 0 0 6px 0;">完全伸展原則</h4>
+              <p style="font-size: 0.78em; color: var(--text-main); margin: 0 0 6px 0;"><strong>身體不碰觸設施任一邊</strong></p>
+              <p style="font-size: 0.72em; color: var(--text-muted); margin: 0;">趴下能四肢舒展；站立時後腳著地完全直立且頭不頂頂部。</p>
+            </div>
+            <div style="flex: 1;" class="card">
+              <div style="font-size: 1.4em; margin-bottom: 4px;">🔒</div>
+              <h4 style="color: var(--accent-warm-brown); font-size: 0.98em; margin: 0 0 6px 0;">防逃脫與材質</h4>
+              <p style="font-size: 0.78em; color: var(--text-main); margin: 0 0 6px 0;"><strong>堅固頂蓋與密合間隙</strong></p>
+              <p style="font-size: 0.72em; color: var(--text-muted); margin: 0;">籠具底隙須小於腳掌寬度，頂部加蓋覆網，避免攀爬摔傷。</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 18px; padding: 12px 24px;">
+            <div style="font-size: 0.8em; color: var(--text-main);">
+              💡 <strong>新手避坑</strong>：市面五彩繽紛的多層細鐵籠容易卡腳受傷，建議選擇平面寬敞的大整理箱或厚玻璃籠！
+            </div>
+            <img src="../raw/assets/hamster/S__17039366.jpg" alt="大眼驚喜倉鼠" class="hamster-mascot" style="max-height: 75px;">
+          </div>
+        </div>
+
+        <aside class="notes">
+          倉鼠需要多大的籠子？根據台北市動保處規範，底面積至少要 600 平方公分以上，而且高度要讓牠們站起來伸懶腰時頭不撞頂。市面上很多五彩繽紛但底面積很小的多層鐵絲籠，容易造成倉鼠攀爬摔傷或啃咬鐵絲焦慮，請盡量選擇平面寬敞、通風防逃的大整理箱或玻璃鼠箱。
+        </aside>
+      </section>
+
+      <!-- Slide 5: 環境溫控 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge">Microclimate</span>
+            <h2>四季舒適微氣候：溫控與晝夜光照</h2>
+            <div class="card" style="border-left: 4px solid var(--accent-caramel); margin-bottom: 14px;">
+              <h4 style="color: var(--accent-caramel); font-size: 0.95em; margin: 0 0 6px 0;">🌡️ 溫度控制在 $18^\circ\text{C} - 27^\circ\text{C}$</h4>
+              <p style="font-size: 0.75em; color: var(--text-muted); margin: 0;">
+                過低容易引發危險的<strong>偽冬眠</strong>；台灣夏天炎熱若超過 28 度極易<strong>熱衰竭中暑</strong>。
+              </p>
+            </div>
+            <div class="grid-2">
+              <div class="card">
+                <h4 style="color: var(--accent-sage); font-size: 0.9em; margin: 0 0 6px 0;">🌬️ 通風、乾燥、無強風</h4>
+                <p style="font-size: 0.72em; color: var(--text-muted); margin: 0;">保持空氣對流但避免冷氣風口直吹，避免濕氣堆積與噪音干擾。</p>
+              </div>
+              <div class="card">
+                <h4 style="color: var(--accent-warm-brown); font-size: 0.9em; margin: 0 0 6px 0;">☀️ 晝夜自然光線</h4>
+                <p style="font-size: 0.72em; color: var(--text-muted); margin: 0;">嚴禁養在無光的封閉全黑暗室！白天有柔和光、夜晚變暗，避免陽光直射。</p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0.7; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039367.jpg" alt="抬頭感受倉鼠" class="hamster-mascot" style="max-height: 220px;">
+            <div class="speech-bubble">
+              🐹 冬天暖暖、夏天涼爽，<br>有日夜節律我才不會時差錯亂！
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          倉鼠體積小，對溫度非常敏感。理想溫度是攝氏 18 到 27 度之間。台灣夏天悶熱必須開冷氣或放置降溫散熱片，冬天則要注意保暖防寒。另外，千萬不能把倉鼠關在暗無天日的儲藏室，飼養環境要有白天的自然光與晚上的黑暗，才能維持正常的生理時鐘。
+        </aside>
+      </section>
+
+      <!-- Slide 6: 穴居厚墊料 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge badge-sage">Natural Burrowing</span>
+            <h2>厚墊料與躲藏洞穴：滿足挖掘安全感</h2>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="card" style="border-left: 4px solid var(--accent-sage);">
+                <h4 style="color: var(--accent-sage); font-size: 0.95em; margin: 0 0 6px 0;">🕳️ 鋪設足夠深度的大量墊料</h4>
+                <p style="font-size: 0.76em; color: var(--text-muted); margin: 0;">
+                  墊料不只是吸尿吸臭，更承載著<strong>挖掘隧道、掩埋儲糧與舒緩緊迫</strong>的生理使命！
+                </p>
+              </div>
+              <div class="card" style="border-left: 4px solid var(--accent-caramel);">
+                <h4 style="color: var(--accent-caramel); font-size: 0.95em; margin: 0 0 6px 0;">🏠 提供封閉安全的躲藏鼠窩</h4>
+                <p style="font-size: 0.76em; color: var(--text-muted); margin: 0;">
+                  提供遮蔽良好的木質、陶瓷或紙質鼠窩，營造安穩暗角，讓鼠鼠安心休息。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0.7; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039372.jpg" alt="麻糬趴平倉鼠" class="hamster-mascot" style="max-height: 180px;">
+            <div class="speech-bubble">
+              🐹 鑽進軟綿綿的墊料山裡，<br>像麻糬一樣趴著睡覺最幸福了～
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          在野外，倉鼠是生活在地底深邃洞穴裡的。所以籠子裡的墊料不只是吸尿用的，更是牠們的精神支柱！鋪設足夠厚度的無塵紙墊料，讓牠們能自由挖掘通道、把食物藏在地底，並且放一個溫馨的小窩，倉鼠就能像這張照片一樣，安心趴成一塊軟綿綿的麻糬。
+        </aside>
+      </section>
+
+      <!-- Slide 7: 運動滾輪 -->
+      <section data-background-color="#FAF7F2">
+        <div style="text-align: left; max-width: 940px; margin: 0 auto;">
+          <span class="badge">Exercise & Wheel</span>
+          <h2>運動是生命！滾輪挑選的關鍵學問</h2>
+          <div class="grid-2" style="margin-bottom: 18px;">
+            <div class="card" style="border-top: 3px solid var(--accent-caramel);">
+              <h4 style="color: var(--accent-caramel); font-size: 0.95em; margin: 0 0 8px 0;">🏃‍♂️ 每夜奔馳數公里</h4>
+              <p style="font-size: 0.78em; color: var(--text-muted); line-height: 1.5; margin: 0;">
+                滾輪是倉鼠釋放巨大體力、預防肥胖與消除焦慮的第一核心設施。
+              </p>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--accent-terracotta);">
+              <h4 style="color: var(--accent-terracotta); font-size: 0.95em; margin: 0 0 8px 0;">🚫 嚴禁鏤空鐵絲滾輪</h4>
+              <p style="font-size: 0.78em; color: var(--text-muted); line-height: 1.5; margin: 0;">
+                鐵絲縫隙極易卡住脆弱腳掌造成骨折甚至斷肢！必須使用<strong>實心跑道</strong>。
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 18px; padding: 14px 24px;">
+            <div>
+              <p style="font-size: 0.82em; color: var(--text-main); margin: 0 0 4px 0; font-weight: 600;">
+                📏 直徑一定要夠大：奔跑時脊椎必須保持完全平直！
+              </p>
+              <span style="font-size: 0.72em; color: var(--text-muted);">
+                若奔跑時背部反弓凹陷，代表滾輪太小，長期將導致脊椎不可逆變形。
+              </span>
+            </div>
+            <img src="../raw/assets/hamster/S__17039366.jpg" alt="熱血奔跑倉鼠" class="hamster-mascot" style="max-height: 75px;">
+          </div>
+        </div>
+
+        <aside class="notes">
+          倉鼠每天晚上在野外可以奔跑好幾公里，所以滾輪絕不能少！挑選滾輪有兩大原則：第一，絕對不能用有鐵絲縫隙的滾輪，很容易造成腳掌卡住骨折；第二，滾輪直徑一定要夠大，跑的時候背部要是水平筆直的，不能反弓彎曲，這樣才能保護脊椎健康。
+        </aside>
+      </section>
+
+      <!-- Slide 8: 飲食指南 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge">Nutrition Guide</span>
+            <h2>雜食性鼠鼠的健康餐盤指南</h2>
+            <div class="grid-2" style="font-size: 0.78em; margin-bottom: 14px;">
+              <div class="card">
+                <span class="highlight-caramel">🌾 五穀雜糧與種子</span>
+                <p style="color: var(--text-muted); margin: 6px 0 0 0;">蕎麥、小米、小麥等多樣穀物，提供穩定碳水與微量元素。</p>
+              </div>
+              <div class="card">
+                <span class="highlight-sage">🥣 綜合營養配方主糧</span>
+                <p style="color: var(--text-muted); margin: 6px 0 0 0;">專用滋養丸或平衡飼料，防止倉鼠挑食造成營養失衡。</p>
+              </div>
+              <div class="card">
+                <span style="color: var(--accent-warm-brown); font-weight:600;">🦷 每日堅硬磨牙</span>
+                <p style="color: var(--text-muted); margin: 6px 0 0 0;">門牙終身生長，需靠堅實顆粒自然磨耗，防範過長刺傷。</p>
+              </div>
+              <div class="card">
+                <span class="highlight-terracotta">💧 乾淨充足新鮮水</span>
+                <p style="color: var(--text-muted); margin: 6px 0 0 0;">隨時備妥滾珠水瓶或淺水盆，每日清洗並更換乾淨飲水。</p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 0.7; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039365.jpg" alt="抱著點心滿足進食的倉鼠" class="hamster-mascot" style="max-height: 200px;">
+            <div class="speech-bubble">
+              🐹 五穀雜糧香噴噴～<br>均衡飲食才能讓我毛色亮麗身體好！
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          倉鼠是雜食性動物，主食應該以豐富的五穀雜糧、天然種子和合格的綜合飼料為主。因為倉鼠的門牙終生都在持續生長，牠們必須每天靠著啃咬堅硬的主食把牙齒磨到適當長度。同時，水壺裡一定要每天換上乾淨新鮮的飲用水。
+        </aside>
+      </section>
+
+      <!-- Slide 9: 致命禁忌 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge badge-terracotta">Crucial Warning</span>
+            <h2>重大誤區：嚴禁以葵瓜子作單一主食！</h2>
+            <div class="card" style="border-left: 4px solid var(--accent-terracotta); margin-bottom: 14px;">
+              <h4 style="color: var(--accent-terracotta); font-size: 0.95em; margin: 0 0 6px 0;">💣 脂肪含量突破 50% 的熱量炸彈</h4>
+              <p style="font-size: 0.76em; color: var(--text-muted); margin: 0;">
+                過量攝取會造成<strong>大肚肥胖、心血管疾病、脂肪肝</strong>並嚴重挑食，大幅縮短壽命！
+              </p>
+            </div>
+            <div class="card" style="background: #FAF3EC; border-color: #E6CEBA; padding: 14px 20px;">
+              <p style="font-size: 0.8em; color: var(--accent-warm-brown); font-weight: 600; margin: 0 0 4px 0;">
+                🌰 正確用法：僅作為偶爾獎勵與親近零食
+              </p>
+              <p style="font-size: 0.72em; color: var(--text-muted); margin: 0;">
+                一天至多給予 1 至 2 顆即可，萬萬不可將整碗飼料填滿葵瓜子。
+              </p>
+            </div>
+          </div>
+          <div style="flex: 0.7; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039370.jpg" alt="腮幫子塞得大大的貪吃倉鼠" class="hamster-mascot" style="max-height: 220px;">
+            <div class="speech-bubble">
+              🐹 雖然瓜子好好吃……<br>但兩頰塞滿會變大胖子生病的！
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          卡通裡常畫倉鼠抱著大向日葵種子，這是最大的迷思！葵瓜子對倉鼠來說就像高糖高脂的炸雞薯條。如果把葵瓜子當主食，倉鼠會嚴重挑食，迅速變成過胖的大胖子，引發脂肪肝與心臟病。葵瓜子只能當成平時親訓互動的極少量獎勵，絕對不能整碗都是瓜子！
+        </aside>
+      </section>
+
+      <!-- Slide 10: 跨物種比較 -->
+      <section data-background-color="#FAF7F2">
+        <div style="text-align: left; max-width: 940px; margin: 0 auto;">
+          <span class="badge badge-sage">Species Comparison</span>
+          <h2>寵物鼠大不同：倉鼠 vs 天竺鼠 vs 絨鼠</h2>
+          <div class="grid-3" style="font-size: 0.75em; margin-bottom: 16px;">
+            <div class="card" style="border-top: 3px solid var(--accent-caramel);">
+              <h4 style="color: var(--accent-caramel); font-size: 1.05em; margin: 0 0 4px 0;">倉鼠 (Hamster)</h4>
+              <p style="color: var(--text-muted); margin: 0 0 6px 0;">壽命 2 - 3 年 · <strong>雜食性</strong></p>
+              <ul class="clean-list" style="font-size: 0.95em;">
+                <li>底面積 $\ge 600\text{ cm}^2$</li>
+                <li>獨居性（嚴禁合籠）</li>
+                <li>溫度 $18^\circ\text{C} - 27^\circ\text{C}$</li>
+              </ul>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--accent-sage);">
+              <h4 style="color: var(--accent-sage); font-size: 1.05em; margin: 0 0 4px 0;">天竺鼠 (Guinea Pig)</h4>
+              <p style="color: var(--text-muted); margin: 0 0 6px 0;">壽命 6 - 8 年 · <strong>草食性</strong></p>
+              <ul class="clean-list" style="font-size: 0.95em;">
+                <li>底面積 $\ge 1,500\text{ cm}^2$</li>
+                <li><strong>必須每日補充維生素 C</strong></li>
+                <li>禁餵倉鼠糧，社交溫順</li>
+              </ul>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--accent-warm-brown);">
+              <h4 style="color: var(--accent-warm-brown); font-size: 1.05em; margin: 0 0 4px 0;">絨鼠 (Chinchilla)</h4>
+              <p style="color: var(--text-muted); margin: 0 0 6px 0;">壽命 10 - 20 年 · <strong>草食性</strong></p>
+              <ul class="clean-list" style="font-size: 0.95em;">
+                <li><strong>耐溫極低：嚴禁超 $25^\circ\text{C}$</strong></li>
+                <li>必須配置立體高跳台</li>
+                <li>高纖牧草，禁高糖油</li>
+              </ul>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 18px; padding: 10px 20px;">
+            <span style="font-size: 0.76em; color: var(--text-muted);">
+              動保處明文規定：不同物種生活習性差異甚大，<strong>嚴禁混養在同一個籠具中</strong>！
+            </span>
+            <img src="../raw/assets/hamster/S__17039371.jpg" alt="仰望倉鼠" class="hamster-mascot" style="max-height: 65px;">
+          </div>
+        </div>
+
+        <aside class="notes">
+          動保處特別強調：不同物種的鼠類絕對不能混養！天竺鼠是全素草食性，而且身體無法自己製造維生素 C，必須天天補充；絨鼠更是高山生物，環境一旦超過 25 度就會熱中暑致死，且需要垂直跳台。每一種鼠都有完全不同的生理需求，千萬不能搞混。
+        </aside>
+      </section>
+
+      <!-- Slide 11: 健康警訊 -->
+      <section data-background-color="#FAF7F2">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; gap: 24px;">
+          <div style="flex: 1.4; text-align: left;">
+            <span class="badge badge-terracotta">Health Indicators</span>
+            <h2>健康拉警報：必須立即就醫的五大指標</h2>
+            <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78em;">
+              <div class="card" style="padding: 10px 18px;">
+                <span class="highlight-terracotta">1. 異常脫毛</span>：大面積掉毛、搔癢、紅疹皮屑（蟎蟲或黴菌感染）。
+              </div>
+              <div class="card" style="padding: 10px 18px;">
+                <span class="highlight-caramel">2. 指甲變形</span>：倒勾、斷裂或陷入腳掌肉墊引發足底炎。
+              </div>
+              <div class="card" style="padding: 10px 18px;">
+                <span style="color: var(--accent-warm-brown); font-weight:600;">3. 體重暴瘦</span>：門牙過長穿刺口腔無法進食、腹瀉或內科疾病。
+              </div>
+              <div class="card" style="padding: 10px 18px;">
+                <span class="highlight-sage">4. 明顯外傷</span>：高處摔傷骨折、抓咬傷流血、眼睛分泌物黏合。
+              </div>
+              <div class="card" style="padding: 10px 18px;">
+                <span style="color: #64748b; font-weight:600;">5. 活動力驟降</span>：長期昏睡蜷縮、體溫冰涼無力、呼吸急促。
+              </div>
+            </div>
+            <p style="font-size: 0.72em; color: var(--text-muted); margin-top: 8px;">
+              ⚠️ 倉鼠極為隱忍病痛，出現肉眼可見異狀請務必盡速尋求<strong>非犬貓特寵獸醫</strong>協助！
+            </p>
+          </div>
+          <div style="flex: 0.7; text-align: center;">
+            <img src="../raw/assets/hamster/S__17039363.jpg" alt="需看醫生倉鼠" class="hamster-mascot" style="max-height: 220px;">
+            <div class="speech-bubble">
+              🐹 如果我不舒服、不愛動，<br>請趕快帶我去看特寵醫生喔！
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          倉鼠在自然界是獵物，天生非常會隱忍病痛。一旦出現肉眼可見的異常，通常病情已經很嚴重了！只要發現明顯脫毛、暴瘦、指甲變形、外傷或活動力大幅衰退，請立刻帶去看專業的特寵獸醫，千萬不要拖延！
+        </aside>
+      </section>
+
+      <!-- Slide 12: 總結與延伸 -->
+      <section data-background-color="#FAF7F2">
+        <div style="text-align: left; max-width: 940px; margin: 0 auto;">
+          <span class="badge">Compounding Knowledge</span>
+          <h2>用科學與愛守護：做個負責任的好飼主</h2>
+          <div class="grid-2" style="margin-bottom: 18px;">
+            <div class="card">
+              <h4 style="color: var(--accent-sage); font-size: 0.95em; margin: 0 0 10px 0;">🎯 今日核心守則</h4>
+              <ul class="clean-list" style="font-size: 0.8em;">
+                <li><strong>一鼠一籠</strong>：給予獨立尊嚴與安全感。</li>
+                <li><strong>舒適環境</strong>：底面積 $\ge 600\text{ cm}^2$、溫控 $18-27^\circ\text{C}$。</li>
+                <li><strong>健康生活</strong>：厚墊料、實心大滾輪、拒絕葵瓜子主食。</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4 style="color: var(--accent-caramel); font-size: 0.95em; margin: 0 0 10px 0;">📥 專業文獻延伸（點擊一鍵下載 PDF）</h4>
+              <ul class="clean-list" style="font-size: 0.76em;">
+                <li>👉 <a href="https://www.hamsterwelfare.com/wp-content/uploads/2021/04/Fischer-2007-golden-hamsters.pdf" target="_blank" style="color: var(--accent-caramel); text-decoration: underline;">Fischer et al. 2007 倉鼠籠具尺寸研究 PDF</a></li>
+                <li>👉 <a href="https://www.rvc.ac.uk/media/3vsnwbf3/hamster-care-sheet.pdf" target="_blank" style="color: var(--accent-caramel); text-decoration: underline;">英國皇家獸醫學院 (RVC) 官方照護指南 PDF</a></li>
+                <li>👉 <a href="https://www.oxbowanimalhealth.com/wp-content/uploads/2020/10/Hamster-and-Gerbil-Care-Guide.pdf" target="_blank" style="color: var(--accent-caramel); text-decoration: underline;">Oxbow 專業特寵獸醫營養照護指南 PDF</a></li>
+                <li>👉 <a href="https://www.laanimalservices.com/sites/default/files/2022-05/Hamster-Care-Guide.pdf" target="_blank" style="color: var(--accent-caramel); text-decoration: underline;">洛杉磯動物服務局官方倉鼠照護手冊 PDF</a></li>
+              </ul>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 18px; padding: 12px 24px;">
+            <div>
+              <p style="font-size: 0.8em; margin: 0; color: var(--text-main); font-weight: 600;">願天下所有的小毛球都能幸福健康地長大！</p>
+              <span style="font-size: 0.68em; color: var(--text-muted);">快捷鍵提示：按 <strong>F</strong> 全螢幕 · 按 <strong>ESC</strong> 總覽 · 按 <strong>S</strong> 開啟雙螢幕演講者模式</span>
+            </div>
+            <img src="../raw/assets/hamster/S__17039362.jpg" alt="揮手說掰掰倉鼠" class="hamster-mascot" style="max-height: 85px;">
+          </div>
+        </div>
+
+        <aside class="notes">
+          照顧一個小生命，是一份長達兩三年的承諾。只要我們給牠足夠的空間、適當的溫度、安全的設施和均衡的飲食，就能讓這隻毛茸茸的小傢伙度過無比幸福的一生。簡報文末我們也準備了國際頂級獸醫學院的指南 PDF 供大家下載研讀。謝謝大家，倉鼠助教也跟大家說掰掰囉！
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <span>LLM WIKI NOTE · 倉鼠飼養照護入門指南</span>
+    <span>按空白鍵或方向鍵翻頁 ➔</span>
+  </div>
+
+  <!-- Reveal.js JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/notes/notes.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'fade',
+      plugins: [ RevealNotes ]
+    });
+  </script>
+</body>
+</html>
